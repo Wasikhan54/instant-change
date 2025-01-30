@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publisher Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+<body>
+<style>
+  
+.con{
+    margin-top: 120px;
+    
+}
+.container1 {
+    background: white;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.note {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.step.active {
+    background: #007bff;
+}
+
+.step.completed {
+    background: #0056b3;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-btn, .continue-btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-btn {
+    background: #888;
+}
+
+.continue-btn {
+    background: #33ccc5;
+}
+
+</style>
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4><img src="assets/images/logo.png" alt="">Instant Designing </h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="bookFair.html">Book Fair</a></li>
+              <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+              <li class="scroll-to-section"><a href="services.html">Services</a></li>
+              <li class="scroll-to-section"><a href="portfolio.html">Portfolio</a></li>
+              <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li> 
+              <li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+   <div class="con">
+    <div class="container">
+        <h5 class="note-h5">The Publisher/Author information below will appear in the print and online catalog.</h3>
+       <div class="contact-fill">
+         
+        <h3>Publisher Information <span> (Fields marked with * are required)</span></h2>
+
+        <form id="publisherForm">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Author's Email: *</label>
+                        <input type="email" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    
+            <div class="form-group">
+                <label>Create Password: *</label>
+                <input type="password" required>
+            </div>
+                </div>
+                <div class="col-md-4">
+                <div class="form-group">
+                <label>Confirm Password: *</label>
+                <input type="password" required>
+            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Name of Person Submitting Form: *</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Mailing Address: *</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Country: *</label>
+                        <select required>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Country: *</label>
+                        <select required>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>State:</label>
+                        <select>
+                            <option>Select State</option>
+                            <option>New York</option>
+                            <option>California</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>City: *</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Zip Code: *</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>URL:</label>
+                        <input type="url" placeholder="http://">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Telephone Number:</label>
+                        <input type="tel">
+                    </div>
+                </div>
+            </div>
+           
+          
+         
+            
+            <div class="form-group">
+                <label>Fax Number:</label>
+                <input type="text">
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="back-btn" onclick="goBack()">Back</button>
+                <button type="submit" class="continue-btn" onclick="continueForm()" >Continue</button>
+            </div>
+        </form>
+       </div>
+    </div>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function continueForm() {
+        window.location.href = "titleform.html";
+    }
+    function goBack() {
+        window.location.href = "book.html";
+    }
+</script>
+</html>

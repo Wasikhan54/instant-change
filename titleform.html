@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publisher Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+<body>
+<style>
+  
+.con{
+    margin-top: 120px;
+    
+}
+.container1 {
+    background: white;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.note {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.step.active {
+    background: #007bff;
+}
+
+.step.completed {
+    background: #0056b3;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-btn, .continue-btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-btn {
+    background: #888;
+}
+
+.continue-btn {
+    background: #33ccc5;
+}
+
+</style>
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4><img src="assets/images/logo.png" alt="">Instant Designing </h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="bookFair.html">Books Fair</a></li>
+              <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+              <li class="scroll-to-section"><a href="services.html">Services</a></li>
+              <li class="scroll-to-section"><a href="portfolio.html">Portfolio</a></li>
+              <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li> 
+              <li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+   <div class="con">
+    <div class="container">
+        <h5 class="note-h5">The title information you supply will appear in the print and online catalog. The title and subject categories are mandatory fields. We strongly recommend you include either a 10 or 13 ISBN number.</h3>
+       <div class="contact-fill">
+         
+        <h3>Title Info<span> (Fields marked with * are required)</span></h2>
+            <h5>Book Title #1</h5>
+
+        <form id="publisherForm">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Title: *</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    
+            <div class="form-group">
+                <label>Sub Title:: *</label>
+                <input type="text" required>
+            </div>
+                </div>
+                <div class="col-md-4">
+                <div class="form-group">
+                <label>Author: *</label>
+                <input type="text" required>
+            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="category">Main Category:</label>
+                        <select id="category" onchange="updateSubCategories()">
+                            <option value="">Select Category</option>
+                            <option value="1">ANTIQUES &amp; COLLECTIBLES</option>
+                            <option value="2">ARCHITECTURE</option>
+                            <option value="3">ART</option>
+                            <option value="4">BIBLES</option>
+                            <option value="5">BIOGRAPHY &amp; AUTOBIOGRAPHY</option>
+                            <option value="34">BODY, MIND &amp; SPIRIT</option>
+                            <option value="6">BUSINESS &amp; ECONOMICS</option>
+                            <option value="7">COMICS &amp; GRAPHIC NOVELS</option>
+                            <option value="9">COMPUTERS</option>
+                            <option value="8">COOKING</option>
+                            <option value="10">CRAFTS &amp; HOBBIES</option>
+                            <option value="11">DESIGN</option>
+                            <option value="12">DRAMA</option>
+                            <option value="13">EDUCATION</option>
+                            <option value="14">FAMILY &amp; RELATIONSHIPS</option>
+                            <option value="15">FICTION</option>
+                            <option value="16">FOREIGN LANGUAGE STUDY</option>
+                            <option value="17">GAMES</option>
+                            <option value="5098">GAMES &amp; ACTIVITIES </option>
+                            <option value="18">GARDENING</option>
+                            <option value="19">HEALTH &amp; FITNESS</option>
+                            <option value="20">HISTORY</option>
+                            <option value="21">HOUSE &amp; HOME</option>
+                            <option value="22">HUMOR</option>
+                            <option value="24">JUVENILE FICTION</option>
+                            <option value="23">JUVENILE NONFICTION</option>
+                            <option value="25">LANGUAGE ARTS &amp; DISCIPLINES</option>
+                            <option value="26">LAW</option>
+                            <option value="27">LITERARY COLLECTIONS</option>
+                            <option value="28">LITERARY CRITICISM</option>
+                            <option value="29">MATHEMATICS</option>
+                            <option value="30">MEDICAL</option>
+                            <option value="31">MUSIC</option>
+                            <option value="32">NATURE</option>
+                            <option value="33">NON-CLASSIFIABLE</option>
+                            <option value="35">PERFORMING ARTS</option>
+                            <option value="36">PETS</option>
+                            <option value="37">PHILOSOPHY</option>
+                            <option value="38">PHOTOGRAPHY</option>
+                            <option value="39">POETRY</option>
+                            <option value="40">POLITICAL SCIENCE</option>
+                            <option value="41">PSYCHOLOGY</option>
+                            <option value="42">REFERENCE</option>
+                            <option value="43">RELIGION</option>
+                            <option value="44">SCIENCE</option>
+                            <option value="45">SELF-HELP</option>
+                            <option value="46">SOCIAL SCIENCE</option>
+                            <option value="47">SPORTS &amp; RECREATION</option>
+                            <option value="48">STUDY AIDS</option>
+                            <option value="49">TECHNOLOGY &amp; ENGINEERING</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="subcategory">Sub-Category:</label>
+                        <input type="text">
+        <!-- <select id="subcategory">
+            <option value="">Select Sub-Category</option>
+        </select> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Country: *</label>
+                        <select required>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Currency: *</label>
+                        <select required>
+                            <option value="AUD">AUD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CHF">CHF</option>
+                            <option value="GBP">GBP</option>
+                            <option value="HUF">HUF</option>
+                            <option value="INR">INR</option>
+                            <option value="JPY">JPY</option>
+                            <option value="NZD">NZD</option>
+                            <option value="PLN">PLN</option>
+                            <option value="RUBLE">RUBLE</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Last Price:</label>
+                      <input type="text">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Year of Publication: *</label>
+                        <input type="text" required placeholder="Year of Publication">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>ISBN: *</label>
+                        <input type="text" required placeholder="ISBN">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Book Cover Image:</label>
+                        <input type="file" placeholder="Book Cover">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>eBook (ePUB / PDF)::</label>
+                        <input type="file" placeholder="Book Cover">
+                    </div>
+                </div>
+               
+            </div>
+           
+          
+         
+            
+          
+
+            <div class="buttons">
+                <button type="button" class="back-btn" onclick="goBack()">Back</button>
+                <button type="submit" class="continue-btn" onclick="continueForm()" >  Continue</button>
+            </div>
+        </form>
+       </div>
+    </div>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function goBack() {
+        window.location.href = "bookConatct.html";
+    }
+    function continueForm() {
+        window.location.href = "payment.html";
+    }
+    const subCategories = {
+            1: ["Advertising", "Americana", "Art" , "Autographs","Books","Bottles","Buttons & Pins", "Canadiana","Care & Restoration","Clocks & Watches","Coins, Currency & Medals","Comics","Dolls","Figurines","Firearms & Weapons","Furniture"],
+            2: ["Urban Planning", "Landscape", "Interior Design"],
+            3: ["Painting", "Sculpture", "Photography"],
+            4: ["Old Testament", "New Testament", "Study Bibles"],
+            5: ["Memoirs", "Historical Figures", "Celebrities"],
+            6: ["Finance", "Marketing", "Entrepreneurship"],
+            7: ["Superheroes", "Manga", "Webcomics"],
+            9: ["Programming", "Networking", "Cyber Security"],
+            10: ["Knitting", "Woodwork", "DIY Crafts"],
+            26: ["Criminal Law", "Corporate Law", "International Law"],
+            44: ["Physics", "Chemistry", "Biology"],
+            49: ["Mechanical", "Electrical", "Software Engineering"]
+        };
+
+        function updateSubCategories() {
+            let category = document.getElementById("category").value;
+            let subCategorySelect = document.getElementById("subcategory");
+
+            // Clear previous options
+            subCategorySelect.innerHTML = '<option value="">Select Sub-Category</option>';
+
+            if (category && subCategories[category]) {
+                subCategories[category].forEach(sub => {
+                    let option = document.createElement("option");
+                    option.value = sub.toLowerCase().replace(/ /g, "-");
+                    option.textContent = sub;
+                    subCategorySelect.appendChild(option);
+                });
+            }
+        }
+</script>
+</html>

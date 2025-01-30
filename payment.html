@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publisher Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+<body>
+<style>
+  
+.con{
+    margin-top: 120px;
+    
+}
+.container1 {
+    background: white;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  
+}    body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .shows {
+            margin-bottom: 20px;
+        }
+        .shows h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .shows p {
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        table td:first-child {
+            font-weight: bold;
+        }
+        .total {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #33ccc5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+</style>
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4><img src="assets/images/logo.png" alt="">Instant Designing </h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="bookFair.html">Books Fair</a></li>
+              <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+              <li class="scroll-to-section"><a href="services.html">Services</a></li>
+              <li class="scroll-to-section"><a href="portfolio.html">Portfolio</a></li>
+              <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li> 
+              <li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+   <div class="con">
+    <div class="container">
+        <h5 class="note-h5">Your order has not been submitted. Please review information below and click confirm to submit your order.</h3>
+       <div class="contact-fill">
+         
+        <h3 style="border-bottom: 1px solid black;" >Confirm Order</h2>
+
+            
+            <div class="shows">
+                <h2>Shows</h2>
+                <p><strong>2025 Frankfurt International Book Fair</strong></p>
+                <p style="border-bottom: 1px solid black;"><strong>Deadline:</strong> Sep 15, 2025</p>
+
+                <p><strong>Full Page Ad in Exhibit Catalog</strong></p>
+                <p><strong>$250.00</strong></p>
+                <input type="text">
+            </div>
+            <table>
+                <tr>
+                    <td>Show Subtotal</td>
+                    <td>$250.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$250.00</td>
+                </tr>
+            </table>
+            <div class="total">
+                <p>Order Total: $250.00</p>
+            </div>
+            <button onclick="confirmOrder()">CONFIRM ORDER</button
+       </div>
+    </div>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function confirmOrder() {
+            alert('Order confirmed!');
+        }
+</script>
+
+</html>
